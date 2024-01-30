@@ -8,7 +8,7 @@ include(FetchContent)
 find_package(SFML REQUIRED graphics)
 
 add_subdirectory(sfml)
-
+message(STATUS "Linking imgui...")
 FetchContent_Declare(
   imgui
   GIT_REPOSITORY https://github.com/ocornut/imgui
@@ -16,6 +16,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(imgui)
 
+message(STATUS "Linking imgui-sfml...")
 FetchContent_Declare(
   imgui-sfml
   GIT_REPOSITORY https://github.com/SFML/imgui-sfml

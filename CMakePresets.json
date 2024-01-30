@@ -17,6 +17,13 @@
       "vendor": { "microsoft.com/VisualStudioRemoteSettings/CMake/1.0": { "sourceDir": "$env{HOME}/.vs/$ms{projectDirName}" } }
     },
     {
+      "name": "linux-release",
+      "displayName": "Linux Release",
+      "description": "Сделать целевой подсистему Windows для Linux (WSL) или удаленную систему Linux.",
+      "inherits": "linux-debug",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Release" }
+    },
+    {
       "name": "macos-debug",
       "displayName": "macOS Debug",
       "description": "Цель — удаленная система macOS.",
