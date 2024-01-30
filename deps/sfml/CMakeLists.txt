@@ -4,4 +4,8 @@ message(STATUS "linking SFML...")
 set(SFML_BUILD_AUDIO FALSE)
 set(SFML_BUILD_NETWORK FALSE)
 
+# Uncomment it if you want sfml 
+# to install in your project during building time
+# and go to the deps/CMakeLists.txt
+
 #FetchContent_MakeAvailable(sfml)

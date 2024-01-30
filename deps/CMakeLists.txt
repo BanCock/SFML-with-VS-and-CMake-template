@@ -1,13 +1,21 @@
 include(FetchContent)
 
+
+# Uncomment FetchContent_Declare(...) and 
+# comment find_package(...) if you want sfml 
+# to install in your project during building time
+
 #FetchContent_Declare(
 #  sfml
 #  GIT_REPOSITORY "https://github.com/SFML/SFML"
 #  GIT_TAG 69ea0cd863aed1d4092b970b676924a716ff718b # 2.6.1
 #)
+
+# Comment this and go to the deps/sfml/CMakeLists.txt
 find_package(SFML REQUIRED graphics)
 
 add_subdirectory(sfml)
+
 message(STATUS "Linking imgui...")
 FetchContent_Declare(
   imgui
