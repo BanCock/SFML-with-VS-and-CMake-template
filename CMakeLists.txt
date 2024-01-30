@@ -4,10 +4,14 @@ project(CMakeSFMLProject LANGUAGES CXX)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
+set(FETCHCONTENT_SOURCE_DIR_IMGUI ${CMAKE_SOURCE_DIR}/deps/imgui)
+set(FETCHCONTENT_SOURCE_DIR_IMGUI-SFML ${CMAKE_SOURCE_DIR}/deps/imgui-sfml)
 
-add_executable(CMakeSFMLProject src/main.cpp)
-target_link_libraries(CMakeSFMLProject PRIVATE sfml-graphics)
+add_subdirectory(deps)
+add_subdirectory(src)
+
 target_compile_features(CMakeSFMLProject PRIVATE cxx_std_17)
+
 
 if(WIN32)
     add_custom_command(
