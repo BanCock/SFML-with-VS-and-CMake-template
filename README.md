@@ -1,4 +1,4 @@
-# SFML and ImGui with Visual Studio and WSL2 template
+# SFML and ImGui with Visual Studio and CMake WSL2 template
 
 I made this repository template to make my future work easier. 
 This template serves as the basis for future projects using SFML and ImGui (unless I give it up, of course).
