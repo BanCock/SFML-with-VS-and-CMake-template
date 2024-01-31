@@ -19,7 +19,9 @@ This template is based on [cmake-sfml-project](https://github.com/SFML/cmake-sfm
 3. Or you can configure the project so that sfml will be installed during build. Need to change a CMakeLists files. 
 Open [this](deps/CMakeLists.txt) and [this](deps/sfml/CMakeLists.txt) files and follow commented instructions.
 
-4. For more instructions and information take a look at the sources:
+# More Info
+
+For more instructions and information take a look at the sources:
  - [ImGui-SFML](https://github.com/SFML/imgui-sfml) - сontains a useful information about imgui-sfml projects, I largely followed the guides from there.
  - [Crossplatform development using VS and WSL2](https://learn.microsoft.com/en-us/cpp/build/walkthrough-build-debug-wsl2?view=msvc-170) - I want to use Visual Studio to make projects in WSL2, so this article helped me a lot.
  - [ImGui wiki](https://github.com/ocornut/imgui/wiki) - documentation for detailed information about the imgui's capabilities.
